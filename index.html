@@ -1,0 +1,138 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700">
+		<link rel="stylesheet" href="public/main.css" type="text/css" />
+		<title>TitanStar Legends</title>
+		<!--meta tags-->
+		<!--Sprite Preloads-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+		<script type="text/javascript" src="./public/bootstrap.dropdown.js"></script>
+
+	</head>
+
+	<body>
+		<div class="ts-content">
+			<div class="ts-gutter-left"></div>
+			<div class="ts-main-wrapper">
+			
+				<div class="ts-page-header">
+
+					<h1>TitanStar Legends</h1><!--make this invisible-->
+
+					<div id="ts-title-graphic"></div>
+
+					<div id="ts-header-right">
+						<div id="ts-search-pane">
+							<!--search textbox form-->
+							<form id="ts-page-search" method="get" action="http://www.google.com/search">
+									<input type="text" class="ts-search-input" name="q" size="21" maxlength="120" placeholder="Search">
+									<span class="ts-search-button"><a id="ts-submit" href="#">Search</a></span>
+							<div class="ts-search-clear"></div>
+						</div>
+
+
+						<div id="ts-social-button-pane">
+							<a href="http://twitter.com/"><div id="ts-social-button-tw" class="ts-social-button"></div></a>
+							<a href="http://facebook.com/"><div id="ts-social-button-fb" class="ts-social-button"></div></a>
+							<a href="http://youtube.com/"><div id="ts-social-button-yt" class="ts-social-button"></div></a>
+						</div>
+					</div>
+
+					<!--search button-->
+
+				</div><!--ts-page-header-->
+				<hr/>
+				
+				<nav class="ts-nav-frame">
+				<div class="ts-nav-items">
+					<!--nav element snowflakes-->
+					<a href="#"><div class="ts-snowflake-glyph"></div>SNOWFLAKES</a>
+					<!--nav element magnets-->
+					<a href="#"><div class="ts-magnets-glyph"></div>MAGNETS</a>
+
+					<div class="dropdown clear-it">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="ts-liquids-glyph"></div>LIQUIDS &#x25BC;</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="display:none;padding:none;">
+								<li><a tabindex="-1" href="#">Flammable</a></li>
+								<li><a tabindex="-1" href="#">Combustible</a></li>
+								<li><a tabindex="-1" href="#">Flambustable</a></li>
+							</ul>
+					</div>
+					<hr/>
+					<div class="ts-nav-lightbar"></div>
+				</div>
+				<!--div class="ts-nav-lightbar"></div-->
+				</nav>
+				
+				<div class="ts-news-frame">
+					<div class="ts-news-frame-title">
+						<h3 style="margin: 0px;">Important News Item</h3>
+						<!-- by Author link at date -->
+						<div class="ts-author-time">by <a href="#">Author</a> at 12:53pm</div>
+					</div><!--ts-news-frame-title-->
+					<div class="ts-news-frame-text">
+						<p>
+						Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+						</p>
+						<p>
+						Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id Cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.
+						</p>
+					</div><!--ts-news-frame-text-->			
+					<!--Read More button div-->
+					<div class="ts-news-read-more"><a href="#">Read More</a></div>
+					</div><!--ts-news-frame-->
+				
+				<div class="ts-talent-frame">
+					<div class="ts-talent-frame-title">
+					<h2>TitanStar Legends - Rune Mastery Loadout Talent Calculator 9000</h2>
+					</div><!--ts-talent-frame-title-->
+					<div id="caption1" class="ts-talent-tree-caption">TALENT TREE 1</div>
+					<div id="caption2" class="ts-talent-tree-caption">TALENT TREE 2</div>					
+					<!--Talent Calculator-->
+					<div id="ts-talent-calculator">
+						<div id="tree-1-1" class="ts-calc-button">&nbsp;</div>
+						<div id="tree-1-2" class="ts-calc-button">&nbsp;</div>
+						<div id="tree-1-3" class="ts-calc-button">&nbsp;</div>
+						<div id="tree-1-4" class="ts-calc-button">&nbsp;</div>
+						<!--buffer node-->
+						<div class="full" style="display: none;"></div>
+						<div id="tree-2-1" class="ts-calc-button">&nbsp;</div>
+						<div id="tree-2-2" class="ts-calc-button">&nbsp;</div>
+						<div id="tree-2-3" class="ts-calc-button">&nbsp;</div>
+						<div id="tree-2-4" class="ts-calc-button">&nbsp;</div>
+						<!--buffer node-->
+						<div class="full" style="display: none;"></div>
+						<div id="ts-talent-scoreboard">
+							<span id="points-spent"></span>&#47;<span id="max-points"></span>
+							<br/><span id="points-caption">Points Spent</span>
+						</div>
+						<div id="talent-stripe-1" class="talent-stripe"></div>
+						<div id="talent-stripe-2" class="talent-stripe"></div>						
+					</div>
+				</div><!--ts-talent-frame-->		
+				<div class="ts-page-footer">
+				<!--Links for Snowflakes | Magnets | Liquids-->
+				<a href="#">SNOWFLAKES</a> | <a href="#">MAGNETS</a> | <a href="#">LIQUIDS</a><br> 
+				Curse Front-End Design Challenge - &copy; 2014 Anthony Bellew 
+				<!--Social Media Buttons on the right-->
+				<div id="ts-social-button-pane-footer">
+					<a href="http://twitter.com/"><div id="ts-social-button-tw" class="ts-social-button"></div></a>
+					<a href="http://facebook.com/"><div id="ts-social-button-fb" class="ts-social-button"></div></a>
+					<a href="http://youtube.com/"><div id="ts-social-button-yt" class="ts-social-button"></div></a>
+				</div>
+				</div><!--ts-page-footer-->
+			</div><!--ts-main-wrapper-->
+			
+			<div class="ts-gutter-right"></div>
+		</div><!--ts-content-->
+		
+		<!--After Load Scripts-->
+		<script type="text/javascript">
+		$('#ts-submit').click(function() {
+			$(this).parents('form:first').submit();
+		});
+		</script>
+		<script type="text/javascript" src="public/tscalcdata.js"></script>		
+		<script type="text/javascript" src="public/tscalc.js"></script>		
+		</body>
+</html>
